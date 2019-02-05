@@ -1,0 +1,14 @@
+Inicializar con atributos de datos
+La forma más básica de usar fancybox
+es agregar el atributo data-fancybox
+a su elemento. Esto vinculará
+automáticamente el evento de clic que
+iniciará fancybox. Use el atributo href
+o data-src para especificar la fuente
+de su contenido.
+
+Ejemplo:
+
+<a href="image.jpg" data-fancybox data-caption="Caption para una sola imagen">
+<img src = "thumbnail.jpg" alt = "" />
+</a>

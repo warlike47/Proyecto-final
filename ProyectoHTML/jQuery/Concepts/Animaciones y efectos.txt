@@ -1,0 +1,62 @@
+Animaciones y efectos
+
+MOSTRAR/OCULTAR
+
+.show(); Muestra un elemento
+
+.hide(); Esconde un elemento
+
+.toggle(); Sirve para hacer las dos cosas
+
+APARECER/DESVANECER
+
+.fadeIn(); Hace aparecer de poco en poco un
+elemento
+
+.fadeOut(); Hace desaparecer de poco en poco
+un elemento
+
+.fadeToggle(); Hace que un elemento aparesca
+o desaparesca de poco en poco
+
+.fadeTo(); Genera una transparencia en una
+imagen similar a .fadeToggle();
+
+DESLIZAR
+
+.slideDown(); Hace que un elemento aparezca
+de abajo hacia arriba
+
+.slideUp(); Hace que un elemento aparezca de
+arriba hacia abajo
+
+.slideToggle(); Hace las dos cosas anteriores
+
+ANIMAR OBJETOS
+
+.animate(); Permite animar cualquier propiedad
+CSS que admita valores numericos y los codigos
+de colores para propiedades como "color" o
+background
+
+ANIMATE ANIDADOS
+
+.animate({.......}, 1000, function(){......});
+
+Siendo que .animate(
+
+{
+//here CSS propieties
+   margin: "2000px"
+   padding: "2000px"
+},
+
+//time in mil s
+
+   1000,
+
+//another function
+
+function(){
+   ......
+});

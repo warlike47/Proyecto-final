@@ -1,0 +1,6 @@
+$("#______")  la Id de algo
+
+$("._______") una clase
+
+$(":_______")  botones de tipo type
+example: checkbox, radio

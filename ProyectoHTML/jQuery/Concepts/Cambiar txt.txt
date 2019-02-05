@@ -1,0 +1,32 @@
+Funciones basicas para agregar y quitar texto
+desde jQuery
+
+
+PARA AGREGAR TEXTO
+
+
+
+.html() Reemplaza texto
+
+.text() Reemplaza un texto mas especifico
+
+.after() Después del contenedor de agrega texto
+
+.append() Agrega texto al lado de otro
+
+.prepend() Agrega texto antes de otro
+
+.before() Antes del contenedor de agrega texto
+
+
+
+
+
+PARA ELIMINAR Y REEMPLAZAR ELEMENTOS
+
+
+
+
+.remove(); Quita un elemento de una pgw
+
+.replaceWith(); Reemplaza un elemento de la pgw

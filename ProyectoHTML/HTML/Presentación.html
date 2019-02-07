@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+	<title>Proyecto final programación 2 Andres Manuel Prieto Alvarez & Cristian Andres Grajales Perez</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="/imagex-icon" href="../Imagenes/icon.png">
+	<link rel="stylesheet" type="text/css" href="../CSS/frontend de presentacion.css">
+	<script src="../jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+			$("#banner").hide();
+			$("#boton").click(function(e){
+				$("#banner").fadeIn(2000);
+				$("#boton").addClass("whenClick");
+				e.preventDefault();
+				return false;
+			})
+		});
+
+		var begin=0;
+
+		function strart(op) {
+			if (op){
+				begin=1;
+			}
+		}
+
+		function beginner(){
+			return begin;
+		}
+	</script>
+</head>
+
+<body>
+	<section class="main">
+		<img src="../Imagenes/presentacion.png" alt="avión" id="boton">
+		<div id="banner">
+			<form action="ingreso" id="ingreso">
+				<label for="correo">Nombre de usuario</label>
+				<input type="text" placeholder="Ingrese su usuario">
+				<br><br>
+				<label for="contraseña">Ingrese su contraseña</label>
+				<input type="text" placeholder="Ingrese su contraseña">
+			</form>
+			<h2><a href="#" onclick="strart(1)">Cootravels S.A.S</a></h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/*Cambia una etiqueta HTML*/
+
+attr("atributo","valor");
+
+/*quita una etiqueta HTML*/
+
+removeAttr("atributo");

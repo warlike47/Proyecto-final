@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html lang='es'>
+
+<head>
+	<title>Proyecto final programación 2 Andrés Manuel Prieto Álvarez & Cristian Andrés Grajales Perez</title>
+	<meta charset='utf-8'>
+	<link rel='shortcut icon' type='/imagex-icon' href='../Imagenes/icon.png'>
+	<link rel='stylesheet' type="text/css" href='../CSS/frontend para proyecto final del segundo semestre.css'>
+	<script src='../jQuery/jquery-3.3.1.min.js' type='text/javascript'></script>
+	<script>
+		$(document).ready(function() {
+			$('#banner_fllegada').hide();
+			$('#banner_fsalida').hide();
+			$('#banner_menu').hide();
+			$('#more_options').hide();
+			$('.we_are').hide();
+
+			$('#fecha_llegada').click(function(e){
+				$('#banner_fllegada').fadeIn(2000);
+				e.preventDefault();
+				return false;
+			})
+			$('#banner_fllegada').mouseleave(function(e){
+				$('#banner_fllegada').hide(2000);
+				e.preventDefault();
+				return false;
+			})
+
+			$('#fecha_salida').click(function(e){
+				$('#banner_fsalida').fadeIn(2000);
+				e.preventDefault();
+				return false;
+			})
+			$('#banner_fsalida').mouseleave(function(e){
+				$('#banner_fsalida').hide(2000);
+				e.preventDefault();
+				return false;
+			})
+
+			$('#menu').click(function(e){
+				$('#banner_menu').fadeIn(2000);
+				e.preventDefault();
+				return false;
+			})
+			$('#banner_menu').mouseleave(function(e){
+				$('#banner_menu').hide(2000);
+				e.preventDefault();
+				return false;
+			})
+
+			$('#more').click(function(e){
+				$('#more_options').fadeIn(2000);
+				e.preventDefault();
+				return false;
+			})
+			$('#more_options').mouseleave(function(e){
+				$('#more_options').hide(2000);
+				e.preventDefault();
+				return false;
+			})
+		});
+
+		var look_for;
+
+		function buscador() {
+			look_for=document.getElementById('search').value;
+			return look_for;
+		}
+
+		function enviar_mes(eleccion){
+			if(eleccion==1){return 'Enero';}
+			if(eleccion==2){return 'Febrero';}
+			if(eleccion==3){return 'Marzo';}
+			if(eleccion==4){return 'Abril';}
+			if(eleccion==5){return 'Mayo';}
+			if(eleccion==6){return 'Junio';}
+			if(eleccion==7){return 'Julio';}
+			if(eleccion==8){return 'Agosto';}
+			if(eleccion==9){return 'Septiembre';}
+			if(eleccion==10){return 'Octubre';}
+			if(eleccion==11){return 'Noviembre';}
+			if(eleccion==12){return 'Diciembre';}
+		}
+
+		function enviar_dia(eleccion) {
+			return parseFloat(eleccion);
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<div id='search_div'>
+			<input type='text' placeholder='Buscar' name='Buscar' id='search'>
+			<input type='button' value='Buscar' id='button_buscar' onclick='buscador()'>
+		</div>
+		<br>
+		<div id='dates'>
+			<input id='fecha_llegada' type='button' value='Fecha de llegada'>
+			<div id='banner_fllegada' class='banners'>
+				<h2>Eliga el mes: </h2>
+				<table class='month'>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(1)'>Enero</a></td>
+						<td><a href='#' onclick='enviar_mes(2)'>Febrero</a></td>
+						<td><a href='#' onclick='enviar_mes(3)'>Marzo</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(4)'>Abril</a></td>
+						<td><a href='#' onclick='enviar_mes(5)'>Mayo</a></td>
+						<td><a href='#' onclick='enviar_mes(6)'>Junio</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(7)'>Julio</a></td>
+						<td><a href='#' onclick='enviar_mes(8)'>Agosto</a></td>
+						<td><a href='#' onclick='enviar_mes(9)'>Septiembre</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(10)'>Octubre</a></td>
+						<td><a href='#' onclick='enviar_mes(11)'>Noviembre</a></td>
+						<td><a href='#' onclick='enviar_mes(12)'>Diciembre</a></td>
+					</tr>
+				</table>
+				<br>
+				<h2>Eliga el dia: </h2>
+				<table class="day">
+					<tr>
+						<td><a href='#' onclick='enviar_dia(1)'>1</a></td>
+						<td><a href='#' onclick='enviar_dia(2)'>2</a></td>
+						<td><a href='#' onclick='enviar_dia(3)'>3</a></td>
+						<td><a href='#' onclick='enviar_dia(4)'>4</a></td>
+						<td><a href='#' onclick='enviar_dia(5)'>5</a></td>
+						<td><a href='#' onclick='enviar_dia(6)'>6</a></td>
+						<td><a href='#' onclick='enviar_dia(7)'>7</a></td>
+						<td><a href='#' onclick='enviar_dia(8)'>8</a></td>
+						<td><a href='#' onclick='enviar_dia(9)'>9</a></td>
+						<td><a href='#' onclick='enviar_dia(10)'>10</a></td>
+						<td><a href='#' onclick='enviar_dia(11)'>11</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_dia(12)'>12</a></td>
+						<td><a href='#' onclick='enviar_dia(13)'>13</a></td>
+						<td><a href='#' onclick='enviar_dia(14)'>14</a></td>
+						<td><a href='#' onclick='enviar_dia(15)'>15</a></td>
+						<td><a href='#' onclick='enviar_dia(16)'>16</a></td>
+						<td><a href='#' onclick='enviar_dia(17)'>17</a></td>
+						<td><a href='#' onclick='enviar_dia(18)'>18</a></td>
+						<td><a href='#' onclick='enviar_dia(19)'>19</a></td>
+						<td><a href='#' onclick='enviar_dia(20)'>20</a></td>
+						<td><a href='#' onclick='enviar_dia(21)'>21</a></td>
+						<td><a href='#' onclick='enviar_dia(22)'>22</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_dia(23)'>23</a></td>
+						<td><a href='#' onclick='enviar_dia(24)'>24</a></td>
+						<td><a href='#' onclick='enviar_dia(25)'>25</a></td>
+						<td><a href='#' onclick='enviar_dia(26)'>26</a></td>
+						<td><a href='#' onclick='enviar_dia(27)'>27</a></td>
+						<td><a href='#' onclick='enviar_dia(28)'>28</a></td>
+						<td><a href='#' onclick='enviar_dia(29)'>29</a></td>
+						<td><a href='#' onclick='enviar_dia(30)'>30</a></td>
+						<td><a href='#' onclick='enviar_dia(31)'>31</a></td>
+					</tr>
+				</table>
+			</div>
+			<input id="fecha_salida" type="button" value="Fecha de salida">
+			<div id="banner_fsalida" class="banners">
+				<h2>Eliga el mes: </h2>
+				<table class="month">
+					<tr>
+						<td><a href='#' onclick='enviar_mes(1)'>Enero</a></td>
+						<td><a href='#' onclick='enviar_mes(2)'>Febrero</a></td>
+						<td><a href='#' onclick='enviar_mes(3)'>Marzo</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(4)'>Abril</a></td>
+						<td><a href='#' onclick='enviar_mes(5)'>Mayo</a></td>
+						<td><a href='#' onclick='enviar_mes(6)'>Junio</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(7)'>Julio</a></td>
+						<td><a href='#' onclick='enviar_mes(8)'>Agosto</a></td>
+						<td><a href='#' onclick='enviar_mes(9)'>Septiembre</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_mes(10)'>Octubre</a></td>
+						<td><a href='#' onclick='enviar_mes(11)'>Noviembre</a></td>
+						<td><a href='#' onclick='enviar_mes(12)'>Diciembre</a></td>
+					</tr>
+				</table>
+				<br>
+				<h2>Eliga el dia: </h2>
+				<table class="day">
+					<tr>
+						<td><a href='#' onclick='enviar_dia(1)'>1</a></td>
+						<td><a href='#' onclick='enviar_dia(2)'>2</a></td>
+						<td><a href='#' onclick='enviar_dia(3)'>3</a></td>
+						<td><a href='#' onclick='enviar_dia(4)'>4</a></td>
+						<td><a href='#' onclick='enviar_dia(5)'>5</a></td>
+						<td><a href='#' onclick='enviar_dia(6)'>6</a></td>
+						<td><a href='#' onclick='enviar_dia(7)'>7</a></td>
+						<td><a href='#' onclick='enviar_dia(8)'>8</a></td>
+						<td><a href='#' onclick='enviar_dia(9)'>9</a></td>
+						<td><a href='#' onclick='enviar_dia(10)'>10</a></td>
+						<td><a href='#' onclick='enviar_dia(11)'>11</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_dia(12)'>12</a></td>
+						<td><a href='#' onclick='enviar_dia(13)'>13</a></td>
+						<td><a href='#' onclick='enviar_dia(14)'>14</a></td>
+						<td><a href='#' onclick='enviar_dia(15)'>15</a></td>
+						<td><a href='#' onclick='enviar_dia(16)'>16</a></td>
+						<td><a href='#' onclick='enviar_dia(17)'>17</a></td>
+						<td><a href='#' onclick='enviar_dia(18)'>18</a></td>
+						<td><a href='#' onclick='enviar_dia(19)'>19</a></td>
+						<td><a href='#' onclick='enviar_dia(20)'>20</a></td>
+						<td><a href='#' onclick='enviar_dia(21)'>21</a></td>
+						<td><a href='#' onclick='enviar_dia(22)'>22</a></td>
+					</tr>
+					<tr>
+						<td><a href='#' onclick='enviar_dia(23)'>23</a></td>
+						<td><a href='#' onclick='enviar_dia(24)'>24</a></td>
+						<td><a href='#' onclick='enviar_dia(25)'>25</a></td>
+						<td><a href='#' onclick='enviar_dia(26)'>26</a></td>
+						<td><a href='#' onclick='enviar_dia(27)'>27</a></td>
+						<td><a href='#' onclick='enviar_dia(28)'>28</a></td>
+						<td><a href='#' onclick='enviar_dia(29)'>29</a></td>
+						<td><a href='#' onclick='enviar_dia(30)'>30</a></td>
+						<td><a href='#' onclick='enviar_dia(31)'>31</a></td>
+					</tr>
+				</table>
+			</div>
+			<input id='menu' type='button' value='Menu'>
+			<div id="banner_menu" class="banners">
+				<h2>Filtros</h2>
+				<input type='text' placeholder='Ingreser el nombre que busca'>
+				<br><br>
+				<label for='tags'>Tags</label>
+				<br><br>
+				<input type='button' value='Wifi' id='wifi'>
+				<input type='button' value='Refrigaracion' id='refrigaracion'>
+				<input type='button' value='Parqueadero' id='parqueadero'>
+				<input type='button' value='Gimnasio' id='gimnasio'>
+				<input type='button' value='Restaurante' id='restaurante'>
+				<input type='button' value='Piscina' id='piscina'>
+				<input type='button' value='Spa' id='spa'>
+				<input type='button' value='Sauna' id='sauna'>
+				<input type='button' value='Recepcion 24hrs' id='recepcion_24_hrs'>
+				<input type='button' value='Piso/Casa' id='piso_casa'>
+				<br><br>
+				<input type='button' value='Filtrar' id='filtrar' onclick=''>
+				<br>
+				<input type='button' value='Mas opciones' id='more'>
+			</div>
+			<div id='more_options'>
+				<h2>Mas opciones</h2>
+				<label for='ubicacion'>Ubicacion</label>
+				<br>
+				<input type='text' placeholder='Ingresa la ubicacion que deseas'>
+				<br><br>
+				<div id="puntuacion">
+					<label for='puntuacion'>Puntuacion</label>
+					<br>
+					<input type='radio' name='puntuacion'> 5 estrellas<br>
+					<input type='radio' name='puntuacion'> 4 estrellas<br>
+					<input type='radio' name='puntuacion'> 3 estrellas<br>
+					<input type='radio' name='puntuacion'> 2 estrellas<br>
+					<input type='radio' name='puntuacion'> 1 estrellas<br>
+					<input type='radio' name='puntuacion'> Piso/Casa <br>
+				</div>
+				<div id="hospedaje">
+					<label for='hospedaje'>Hospedaje</label>
+					<br>
+					<input type='checkbox' name='feedback'> 100 Excelente<br>
+					<input type='checkbox' name='feedback'> 80 Muy Bueno<br>
+					<input type='checkbox' name='feedback'> 60 Bueno<br>
+					<input type='checkbox' name='feedback'> 40 Razonable<br>
+					<input type='checkbox' name='feedback'> 20 Aceptable<br>
+					<input type='checkbox' name='feedback'> 0 Sin calificar<br>
+				</div>
+				<br><br>
+				<label for='precio_por_noche'>Precio por noche</label>
+				<input type='range' name='price_per_nigth' value='180000' min='180000' max='1800000' autocomplete='off'>
+				<br>
+				<input type='button' value='Filtrar' onclick=''>
+			</div>
+		</div>
+	</header>
+	<section class='main'>
+		<article class='galeria'>
+			<img src='../Imagenes/cancun.jpg' alt='Imagen'>
+			<div>
+				<h2 class='refence'><a href='https://goo.gl/maps/hxJcrHy1dYt' class='reference' target='_blank'>Hotel Occidental Costa de Cancún</a></h2>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<blockquote>Coltravels sas</blockquote>
+		<cite class="we_are">Cristian Andrés Grajales Pérez & Andrés Manuel Prieto Álvarez</cite>
+	</footer>
+</body>
+</html>

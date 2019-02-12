@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang='es'>
+
+<html>
+	<head>
+		<title>Proyecto final programación 2 Andrés Manuel Prieto Álvarez & Cristian Andrés Grajales Perez</title>
+		<meta charset='utf-8'>
+		<link rel='shortcut icon' type='/imagex-icon' href='../Imagenes/icon.png'>
+		<link rel='stylesheet' type='text/css' href='../CSS/frontend del admi.css'>
+		<script src='../jQuery/jquery-3.3.1.min.js' type='text/javascript'></script>
+		<script>
+			var hotel, dirr, ubication, dirr_img, hotel_price, num_star, room_type_1, room_type_2, room_type_3;
+			var a_wf=0, a_rfrgrcn=0, a_prqdr=0, a_gmns=0, a_rstrnt=0, a_pscn=0, a_sp=0, a_sn=0, a_24hrs=0, a_ps_cs=0;
+			function take_dates() {
+				hotel=document.getElementById('name_hotel').value;
+				dirr=document.getElementById('url').value;
+				ubication=document.getElementById('ubi').value;
+				dirr_img=document.getElementById('url_img').value;
+				hotel_price=parseFloat(document.getElementById('price').value);
+				num_star=parseFloat(document.getElementById('stars').value);
+				room_type_1=parseFloat(document.getElementById('individuals_rooms').value);
+				room_type_2=parseFloat(document.getElementById('doble_rooms').value);
+				room_type_3=parseFloat(document.getElementById('familiar_rooms').value);
+				if($(wifi).prop('checked')){a_wf=1;}else{a_wf=0}
+				if($(refrigeracion).prop('checked')){a_rfrgrcn=1;}else{a_rfrgrcn=0}
+				if($(parqueadero).prop('checked')){a_prqdr=1;}else{a_prqdr=0}
+				if($(gimnasio).prop('checked')){a_gmns=1;}else{a_gmns=0}
+				if($(restaurante).prop('checked')){a_rstrnt=1;}else{a_rstrnt=0}
+				if($(piscina).prop('checked')){a_pscn=1;}else{a_pscn=0}
+				if($(spa).prop('checked')){a_sp=1;}else{a_sp=0}
+				if($(sauna).prop('checked')){a_sn=1;}else{a_sn=0}
+				if($(recepcion_24_hrs).prop('checked')){a_24hrs=1;}else{a_24hrs=0}
+				if($(piso_casa).prop('checked')){a_ps_cs=1;}else{a_ps_cs=0}
+			}
+
+			function nombre_del_hotel() {return hotel;}
+			function val_url() {return dirr;}
+			function place() {return ubication;}
+			function val_url_img() {return dirr_img;}
+			function precio() {return hotel_price;}
+			function numero_de_estrellas() {return num_star;}
+			function numero_de_habitaciones_individuales() {return room_type_1;}
+			function numero_de_habitaciones_dobles() {return room_type_2;}
+			function numero_de_habitaciones_familiares() {return room_type_3;}
+			function look_for_wifi() {return a_wf;}
+			function look_for_refrigeracion() {return a_rfrgrcn;}
+			function look_for_parqueadero() {return a_prqdr;}
+			function look_for_gimnasio() {return a_gmns;}
+			function look_for_restaurante() {return a_rstrnt;}
+			function look_for_piscina() {return a_pscn;}
+			function look_for_spa() {return a_sp;}
+			function look_for_sauna() {return a_sn;}
+			function look_for_24_hrs() {return a_24hrs;}
+			function look_for_piso_casa() {return a_ps_cs;}
+		</script>
+	</head>
+	<body>
+		<section class='main'>
+			<article>
+				<img src='../Imagenes/presentacion.png' alt='Logo de la compañia'>
+				<form action='add_articles'>
+					<h2>Registro de un nuevo hotel</h2>
+					<br>
+					<label for='hotels name'>Nombre del hotel</label>
+					<br>
+					<input type='text' placeholder='Introduzca el nombre del nuevo hotel' id='name_hotel'>
+					<br>
+					<label for='URL'>URL</label>
+					<br>
+					<input type='text' placeholder='Introduzca el URL del nuevo hotel' id='url'>
+					<br>
+					<label for='Ubi'>Ubicación</label>
+					<br>
+					<input type='text' placeholder='Introduzca la ubicación del nuevo hotel' id='ubi'>
+					<br>
+					<label for='image_URL'>Imagen</label>
+					<br>
+					<input type='text' placeholder='Introduzca el URL de la nueva imagen' id='url_img'>
+					<br>
+					<label for='precio'>Precio</label>
+					<br>
+					<input type='text' placeholder='Ingrese el precio por noche' id='price'>
+					<br>
+					<label for='estrellas'>Estrellas</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero de estrellas' id='stars'>
+					<br>
+					<label for='habitaciones_individuales'>Habitaciones individuales</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero habitaciones individuales' id='individuals_rooms'>
+					<br>
+					<label for='habitaciones_doble'>Habitaciones dobles</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero habitaciones dobles' id='doble_rooms'>
+					<br>
+					<label for='habitaciones_familiares'>Habitaciones familiares</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero de habitaciones familiares' id='familiar_rooms'>
+					<br>
+					<br><br>
+					<input type='button' value='Añadir' onclick='take_dates()'>
+				</form>
+			</article>
+			<article id='aditamentos'>
+				<label for='aditamentos'>Aditamentos</label>
+					<br><br>	
+					<input type='checkbox' name='extra' value='0' id='wifi'> Wifi <br>
+					<input type='checkbox' name='extra' value='0' id='refrigeracion'> Refrigeracion <br>
+					<input type='checkbox' name='extra' value='0' id='parqueadero'> Parqueadero <br>
+					<input type='checkbox' name='extra' value='0' id='gimnasio'> Gimnasio <br>
+					<input type='checkbox' name='extra' value='0' id='restaurante'> Restaurante <br>
+					<input type='checkbox' name='extra' value='0' id='piscina'> Piscina <br>
+					<input type='checkbox' name='extra' value='0' id='spa'> Spa <br>
+					<input type='checkbox' name='extra' value='0' id='sauna'> Sauna <br>
+					<input type='checkbox' name='extra' value='0' id='recepcion_24_hrs'> Recepcion 24hrs <br>
+					<input type='checkbox' name='extra' value='0' id='piso_casa'> Piso/Casa <br>
+			</article>
+		</section>
+	</body>
+</html>

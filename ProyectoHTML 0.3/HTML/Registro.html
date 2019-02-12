@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang='es'>
+
+<head>
+	<title>Proyecto final programación 2 Andres Manuel Prieto Alvarez & Cristian Andres Grajales Perez</title>
+	<meta charset='utf-8'>
+	<link rel='shortcut icon' type='/imagex-icon' href='../Imagenes/icon.png'>
+	<link rel='stylesheet' type='text/css' href='../CSS/Frontend de registro.css'>
+	<script>
+		var user_name, name_of_user, user_cddc, user_password, hotel_price;
+		function check() {
+			user_name=document.getElementById('user').value;
+			name_of_user=document.getElementById('names').value;
+			user_cddc=document.getElementById('cddc').value;
+			user_password=document.getElementById('password').value;
+		}
+
+		function nombre_de_usuario() {return user_name;}
+		function nombre_del_usuario() {return name_of_user;}
+		function cedula_del_usuario() {return user_cddc;}
+		function contraseña_del_usuario() {return user_password;}
+	</script>
+</head>
+<body>
+	<section>
+		<article>
+			<form action='registro'>
+				<br>
+				<h2>Registro de usuario</h2>
+				<br>
+				<label for='user'>User</label>
+				<br>
+				<input type='text' placeholder='Ingrese su nombre de usuario' id='user'>
+				<br>
+				<label for='nombres'>Nombre</label>
+				<br>
+				<input type='text' placeholder='Ingrese su nombre' id='names'>
+				<br>
+				<label for='cedula'>Cédula</label>
+				<br>
+				<input type='text' placeholder='Ingrese su cédula' id='cddc'>
+				<br>
+				<label for='contrasena'>Contrasena</label>
+				<br>
+				<input type='password' placeholder='Ingrese su contraseña' id='password'>
+				<br><br><br>
+				<a href='Presentación.html'><input type='button' value='Enviar' onclick='check()'></a>
+			</form>
+		</article>
+	</section>
+</body>
+
+</html>

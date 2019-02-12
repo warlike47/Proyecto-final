@@ -1,0 +1,10 @@
+CAMBIAR EL CSS DE LAS COSAS/ANIMAR
+
+addClass() Agrega una clase
+
+toggleClass() Agrega y quita una clase
+
+removeClass() Quita una clase
+
+.css() Sirve para modificar parte por parte
+las propiedades CSS de un objeto

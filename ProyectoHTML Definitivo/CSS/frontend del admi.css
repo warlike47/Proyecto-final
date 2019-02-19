@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	background: rgb(197,222,234);
+	background: -moz-linear-gradient(top, rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%);
+	background: linear-gradient(to bottom, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 );
+	height: 100%;
+	width: 100%;
+}
+
+img{
+	width: 18%;
+	height: 18%;
+	float: none;
+	margin-top: 0px;
+	margin-left: 5%;
+	border-radius: 50%;
+	background: #41ADDB;
+	display: inline-block;
+	border: 3px solid #fff;
+	box-shadow: 10px 10px 5px -3px rgba(160,185,222,0.68);
+	-moz-box-shadow: 10px 10px 5px -3px rgba(160,185,222,0.68);
+	-webkit-box-shadow: 10px 10px 5px -3px rgba(160,185,222,0.68);
+	position: relative;
+	top: -320px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+input[type="button"]{
+	display: inline-table;
+	height: 40px;
+	width: 100%;
+}
+
+form{
+	border: 1.5px solid #000;
+	display: inline-block;
+	padding: 2% 5% 3% 5%;
+	background: #4590D9;
+	margin-left: 20px;
+	font-size: 100%;
+	margin-top: 2%;
+	height: 25%;
+	width: 60%;
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	letter-spacing: -0.6px;
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: none;
+	word-spacing: 0.8px;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 5px;
+	color: #000000;
+}
+
+form h2{
+	margin-top: 5px;
+}
+
+input[type="text"]{
+	display: inline-block;
+	padding-left: 2%;
+	height: 20px;
+	width: 100%;
+}
+
+#aditamentos{
+	background: white;
+	background: #4590D9;
+	border: 1px solid black;
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	letter-spacing: -0.6px;
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: none;
+	word-spacing: 0.8px;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 5px;
+	color: #000000;
+
+
+	padding: 1% 1.5% 1% 1.5%;
+	border-radius: 15px;
+	margin-left: 3%;
+	width: 18%;
+
+	position: absolute;
+	top: 40%;
+
+	transition: 5s;
+}
+
+input[type="checkbox"]{
+	display: inline-block;
+}
+
+input[name="send_extra"]{
+	margin-top: 2%;
+}
+
+input[name="add_extra"]{
+	margin-top: 2%;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang='es'>
+
+<html>
+	<head>
+		<title>Proyecto final programación 2 Andrés Manuel Prieto Álvarez & Cristian Andrés Grajales Perez</title>
+		<meta charset='utf-8'>
+		<link rel='shortcut icon' type='/imagex-icon' href='../Imagenes/icon.png'>
+		<link rel='stylesheet' type='text/css' href='../CSS/frontend del admi.css'>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js' type='text/javascript'></script>
+		<script src='../JavaScript/JS_admi.js'></script>
+	</head>
+	
+	<body>
+		<section class='main'>
+			<article>
+				<img src='../Imagenes/presentacion.png' alt='Logo de la compañia' id='avion'>
+				<form action='add_articles' id='form_add_dates'>
+					<h2>Registro de un nuevo hotel</h2>
+					<br>
+					<label for='hotels name'>Nombre del hotel</label>
+					<br>
+					<input type='text' placeholder='Introduzca el nombre del nuevo hotel' id='name_hotel'>
+					<br>
+					<label for='URL'>URL</label>
+					<br>
+					<input type='text' placeholder='Introduzca el URL del nuevo hotel' id='url'>
+					<br>
+					<label for='Ubi'>Ubicación</label>
+					<br>
+					<input type='text' placeholder='Introduzca la ubicación del nuevo hotel' id='ubi'>
+					<br>
+					<label for='image_URL'>Imagen</label>
+					<br>
+					<input type='text' placeholder='Introduzca el URL de la nueva imagen' id='url_img'>
+					<br>
+					<label for='precio'>Precio</label>
+					<br>
+					<input type='text' placeholder='Ingrese el precio por noche' id='price'>
+					<br>
+					<label for='estrellas'>Estrellas</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero de estrellas' id='stars'>
+					<br>
+					<label for='habitaciones_individuales'>Habitaciones individuales</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero habitaciones individuales' id='individuals_rooms'>
+					<br>
+					<label for='habitaciones_doble'>Habitaciones dobles</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero habitaciones dobles' id='doble_rooms'>
+					<br>
+					<label for='habitaciones_familiares'>Habitaciones familiares</label>
+					<br>
+					<input type='text' placeholder='Ingrese el numero de habitaciones familiares' id='familiar_rooms'>
+					<br><br><br>
+					<input type='button' class='enviar' value='Añadir' onclick='take_dates()'>
+				</form>
+			</article>
+			<article id='aditamentos'>
+				<label for='aditamentos'>Aditamentos</label>
+					<br><br>	
+					<input type='checkbox' name='extra' value='0' id='wifi'> Wifi <br>
+					<input type='text' class='aditamento' id='valor_wifi' placeholder='Ingresa el valor del aditamento'>
+					<input type='checkbox' name='extra' value='0' id='parqueadero'> Parqueadero <br>
+					<input type='text' class='aditamento' id='valor_parqueadero' placeholder='Ingresa el valor del aditamento'>
+					<input type='checkbox' name='extra' value='0' id='gimnasio'> Gimnasio <br>
+					<input type='text' class='aditamento' id='valor_gym' placeholder='Ingresa el valor del aditamento'>
+					<input type='checkbox' name='extra' value='0' id='restaurante'> Restaurante <br>
+					<input type='text' class='aditamento' id='valor_restaurante' placeholder='Ingresa el valor del aditamento'>
+					<input type='checkbox' name='extra' value='0' id='piscina'> Piscina <br>
+					<input type='text' class='aditamento' id='valor_piscina' placeholder='Ingresa el valor del aditamento'>
+					<input type='checkbox' name='extra' value='0' id='spa'> Spa <br>
+					<input type='text' class='aditamento' id='valor_sap' placeholder='Ingresa el valor del aditamento'>
+					<input type='checkbox' name='extra' value='0' id='sauna'> Sauna <br>
+					<input type='text' class='aditamento' id='valor_sauna' placeholder='Ingresa el valor del aditamento'>
+					<input type='button' class='enviar' name='send_extra' value='Agregar aditamentos' onclick='take_additions()'>
+					<input type='button' id='send_extra' class='enviar' name='add_extra' value='Añadir aditamentos' onclick='send_additions()'>
+			</article>
+		</section>
+	</body>
+</html>

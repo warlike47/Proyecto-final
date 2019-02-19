@@ -1,0 +1,578 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: rgb(197,222,234);
+	background: -moz-linear-gradient(top, rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%);
+	background: linear-gradient(to bottom, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 );
+	background-size: 100% 100%;
+	min-width: 733px;
+	height: 100%;
+	width: 100%;
+}
+
+header{
+	height: 20%;
+	width: 100%;
+	background: #7C8A86;
+}
+
+.refence{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+#search_div{
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	font-size: 12px;
+}
+
+
+#search{
+	width: 76%;
+	height: 30px;
+	margin-top: 7px;
+	margin-left: 0.5%;
+}
+
+#search_div input[type="text"], #banner_menu input[type="text"], #more_options input[type="text"]{
+	padding-left: 0.5%;
+}
+
+#search_div input[type="button"]{
+	z-index: 2;
+	width: 5rem;
+	height: 35px;
+	display: inline-block;
+}
+
+#dates input[type="button"]{
+	z-index: 2;
+	height: 2rem;
+	width: 23rem;
+	padding-left: 2%;
+	margin-bottom: 1%;
+	margin-left: 0.65%;
+	display: inline-block;
+}
+
+.banners{
+	z-index: 3;
+	border-radius: 30px;
+	background: #4FC9E6;
+	
+	
+	height: 55%;
+	width: 31.8%;
+
+	color: #FFFFFF;
+	font-weight: 700;
+	word-spacing: 0px;
+	font-style: normal;
+	font-size: 0.005em;
+	letter-spacing: 0px;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#banner_fecha{
+	position: absolute;
+	left: 0.75%;
+	top: 20%;
+
+
+	width: 63.6%;
+}
+
+#banner_menu{
+	position: absolute;
+	right: 0.75%;
+	top: 20%;
+}
+
+#month, #day{
+	width: 14rem;
+	height: 8rem;
+	margin-top: 2%;
+	margin-left: 3%;
+	display: inline-block;
+}
+
+#month h2, #day h2{
+	margin-bottom: 20px;
+}
+
+#month a, #day a, #month h2, #day h2{
+	font-size: 0.9rem;
+}
+
+#day a, #month a{
+	word-spacing: 5%;
+}
+
+label[for="tiempo_de_estancia"]{
+	display: block;
+	margin-left: 3%;
+	
+	font-size: 0.9rem;
+}
+
+#ingresa_dias{
+
+}
+
+.banners h2{
+	text-align: center;
+}
+
+.banners p{
+	padding-left: 5%;
+}
+
+.banners a{
+	text-decoration: none;
+	color: white;
+}
+
+#banner_menu input[type="text"]{
+	width: 80%;
+	height: 20px;
+	margin-left: 10%;
+	padding-left: 2%;
+	border-radius: 10px;
+}
+
+label[for="tags"]{
+	padding-left: 2%;
+	font-weight: bold;
+	font-size: 0.6rem;
+} 
+
+#banner_menu input[type="button"]{
+	width: 100px;
+	height: 30px;
+	min-width: 30%;
+	font-size: 0.3em;
+	display: inline-block;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#table_tags{
+	border-spacing: 5px;
+	padding-left: 2%;
+	font-size: 10px;
+	width: 100%;
+}
+
+#table_tags tr{
+	display: inline-block;
+}
+
+#banner_menu  #filtrar{
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
+#banner_menu  #more{
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
+#more_options{
+	background: #4FC9E6;
+	z-index: 3;
+	
+	padding-left: 3%;
+	height: 75%;
+	width: 45%;
+
+	color: #FFFFFF;
+	font-weight: 700;
+	word-spacing: 0px;
+	font-style: normal;
+	font-size: 0.805em;
+	letter-spacing: 0px;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+	top: 6%;
+	left: 19.35%;
+	position: absolute;
+	border-radius: 15px 200px 0px 200px;
+}
+
+#more_options h2{
+	padding-left: 25%;
+}
+
+#more_options input[type="text"]{
+	width: 90%;
+	height: 40px;
+	padding-left: 2%;
+	margin-left: -4%;
+	border-radius: 10px;
+}
+
+#puntuacion, #hospedaje{
+	display: inline-block;
+	font-size: 0.6rem;
+	padding-left: 1%;
+	width: 45%;
+	top: 0px;
+}
+
+label[for="precio_por_noche"]{
+	display: inline-block;
+	padding-left: 4%;
+	margin-right: 3%; 
+}
+
+input[type='range']{
+	display: inline-block;
+	margin: auto;
+	width: 60%;
+}
+
+input[type='range']:focus{
+	outline: none;  /*Es por una cuestion estetica*/
+}
+
+input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {  /*Esto se refiere a la bolita*/
+  background-color: #3748A9;  /*Es el color de la bolita*/
+  border-radius: 50%;         /*Es para que sea bolita*/
+  margin-top: -9px;           /*Se pone así para que este al nivel de la linea*/
+  height: 20px;				  /*Es el tamaño de la bolita a lo largo*/
+  width: 20px;				  /*Es el tamaño de la bolita a lo ancho*/
+}
+
+input[type=range]::-webkit-slider-runnable-track {  /*Esto se refiere a la linea por donde va la bolita*/
+  background-color: #FFFFFF;
+  outline: none;
+  height: 3px;
+}
+
+
+#more_options input[type="button"]{
+	margin-top: 5%;
+	margin-left: 17.5%;
+	padding-left: 30.5%;
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+footer{
+	background: #7C8A86;
+	position: fixed;
+	z-index: 4;
+	bottom: 0px;
+	width: 100%;
+}
+
+blockquote{
+	color: #FFFFFF;
+	font-size: 1.025rem;
+	font-style: normal;
+	font-weight: normal;
+	word-spacing: 0.8px;
+	font-variant: normal;
+	text-decoration: none;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+	padding-left: 40%;
+}
+
+#autores{
+	color: #FFFFFF;
+	font-size: 35px;
+	word-spacing: 1px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: -2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+	padding-left: 10%;
+}
+
+
+
+.galeria{
+	display: block;
+	background: #5D6B67;
+	margin: 1% 0% 2% 0%;
+}
+
+.preView{
+	width: 260px;
+	height: 200px;
+	margin-top: 5px;
+	margin-right: 1%;
+	display: inline-flex;
+}
+
+.title{
+	width: 30%;
+	height: auto;
+	min-width: 200px;
+	position: absolute;
+	display: inline-block;
+}
+
+a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+h2 a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 0.2px;
+	text-decoration: none;
+	font-variant: normal;
+	word-spacing: 0.1px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 34px;
+	margin-top: 2%;
+	color: #ffffff;
+	display: block;
+	z-index: 2;
+}
+
+.stars{
+	width: 3%;
+	height: 3%;
+	min-width: 35px;
+	min-height: 35px;
+	margin-bottom: 2%;
+	margin-left: -1%;
+}
+
+.prices{
+	text-decoration: none solid rgb(68, 68, 68);
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: normal;
+	text-transform: none;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-style: normal;
+	word-spacing: 0px;
+	font-size: 30px;
+	color: #FFFFFF;
+
+	float: right;
+	width: 260px;
+	height: 200px;
+	display: block;
+}
+
+.prices h3, .prices p{
+	text-align: right;
+	margin-right: 10%;
+}
+
+.prices input[type='button']{
+	border-radius: 300px;
+	margin-top: 1%;
+	display: block;
+	height: 30px;
+	margin: auto;
+	width: 90%;
+
+}
+
+img[alt]{
+	padding: 1px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.desplegar{
+	z-index: 1;
+	width: 90%;
+	height: 10%;
+	margin: auto;
+	display: block;
+	margin-top: 0.5%;
+	background: #51A2EB;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+}
+
+.desplegar img{
+	height: 35px;
+	width: 100px;
+	margin: auto;
+	display: block;
+}
+
+.comments{
+	border-radius: 30px 30px 30px 30px;
+	background: #99A4AD;
+	display: block;
+	margin: auto;
+	width: 85%;
+	z-index: 3;
+}
+
+.comments img{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+}
+
+.user_info{
+	width: 30%;
+	float: left;
+	margin-left: 10%;
+	display: inline-flex;
+}
+
+.comment_text{
+	width: 50%;
+	z-index: 2;
+	padding: 1%;
+	opacity: 0.5;
+	background: white;
+	border-radius: 30px;
+	display: inline-block;
+}
+
+.comments p{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	letter-spacing: -0.6px;
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: none;
+	word-spacing: 0.8px;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1em;
+	color: #000000;
+}
+
+.comments div{
+	height: 15%;
+	margin-top: 2%;
+	padding-bottom: 5%;
+}
+
+#fomr_comments{
+	-webkit-box-shadow: 17px 25px 40px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 17px 25px 40px 0px rgba(0,0,0,0.45);
+	box-shadow: 17px 25px 40px 0px rgba(0,0,0,0.45);
+	border-radius: 30px;
+	background: #329CBE;
+	padding: 5%;
+	margin: 3%;
+}
+
+@font-face{
+	font-family: "Heineken";
+	src: url("Fuentes/HEINEKEN.TTF");
+}
+
+#fomr_comments label{
+	font-family: "Heineken", Times, serif;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	font-size: 25px;
+}
+
+textarea{
+	padding: 1%;
+	min-width: 97.5%;
+	max-width: 97.5%;
+	min-height: 135px;
+	max-height: 135px;
+}
+
+#añadir_comentario{
+	width: 100%;
+	height: 45px;
+	margin: auto;
+	display: block;
+	border-radius: 30px;
+}
+
+#pagar{
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#pagar form[action='pay']{
+	background: #7C8A86;
+	border-radius: 30px;
+	padding: 3%;
+}
+
+#pagar form[action='pay'] p a{
+	color: black;
+	text-decoration: none;
+}
+
+#pagar p{
+	background: rgba(255,255,255,0.5);
+	border-radius: 15px;
+	padding: 3%;
+}
+
+#tersm_y_conditions{
+	border-radius: 30px;
+	height: 30px;
+	width: 25%;
+
+	position: relative;
+	top: -6px;
+
+	transition: 3s;
+	transition-timing-function:ease;
+}
+
+#facturar{
+	float: right;
+
+	background: red;
+
+	border-radius: 30px;
+	height: 30px;
+	width: 20%;
+
+	transition: 3s;
+	transition-timing-function:ease;
+}
+
+#message{
+	font-size: 3px;
+	display: flex;
+}

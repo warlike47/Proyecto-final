@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang='es'>
+
+<html>
+	<head>
+		<title>Proyecto final programación 2 Andrés Manuel Prieto Álvarez & Cristian Andrés Grajales Perez</title>
+		<meta charset='utf-8'>
+		<link rel='shortcut icon' type='/imagex-icon' href='../Imagenes/icon.png'>
+		<link rel='stylesheet' type='text/css' href='../CSS/factura.css'>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js' type='text/javascript'></script>
+		<script src='../JavaScript/JS_factura.js'></script>
+	</head>
+
+	<body>
+		<br>
+		<form action='facturar'>
+			<h2>Factura</h2>
+			<br>
+			<label for='Hotel'>Nombre del hotel: </label>
+			<p id='hotel_name'>1</p><br>
+			<label for='Numero_de_habitaciones'>Numero de habitaciones: </label>
+			<p id='num_room'>1</p><br>
+			<label for='Adicionales'>Elementos adicionales</label>
+			<p id='add'>1</p><br>
+			<label for='Tiempo_de_estadia'>Tiempo de estadia</label>
+			<p id='stay'>1</p><br>
+			<label for='Precio_por_noche'>Precio por noche</label>
+			<p id='price_per_night'>1</p><br>
+			<label for='Precio_a_pagar'>Precio a pagar</label>
+			<br><br>
+			<input type='button' value='Presiona para obtener costo' id=pay onclick='obtener_costo()'>
+		</form>
+	</body>
+</html>
